@@ -1,28 +1,32 @@
 * {
-  text-align: center; }
+  text-align: center;
+  font-family: 'Raleway', sans-serif; }
 
 .cell {
   border: 2px solid black;
   display: inline-block;
   height: 80px;
   width: 80px;
-  margin: -4px; }
+  margin: -4px;
+  transition: color ease 2s; }
+
+.cell:hover {
+  background-color: red; }
 
 .green {
-  background-color: green; }
+  background-color: green;
+  transition: ease 1s; }
 
 .blue {
-  background-color: blue; }
-
-#head, #directions, #turn {
-  font-family: arial; }
+  background-color: blue;
+  transition: ease 1s; }
 
 #head {
   font-size: 30px;
-  margin-top: 50px; }
+  margin-top: 100px; }
 
 #directions {
   font-size: 20px; }
 
 #turn {
-  margin-bottom: 20px; }
+  margin-bottom: 100px; }

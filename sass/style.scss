@@ -1,5 +1,6 @@
 *{
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .cell{
@@ -8,23 +9,26 @@
   height: 80px;
   width: 80px;
   margin: -4px;
+  transition: color ease 2s;
+}
+
+.cell:hover {
+  background-color: red;
 }
 
 .green {
   background-color: green;
+  transition: ease 1s
 }
 
 .blue {
   background-color: blue;
-}
-
-#head, #directions, #turn{
-  font-family: arial;
+  transition: ease 1s
 }
 
 #head {
   font-size: 30px;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 #directions {
@@ -32,7 +36,7 @@
 }
 
 #turn {
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 // .animated {

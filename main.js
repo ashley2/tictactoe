@@ -55,12 +55,17 @@ function init() {
       if (squares.indexOf("1") !== -1 && squares.indexOf("2") !== -1 &&  squares.indexOf("3") !== -1){
         var classList = boxClick.getAttribute('class');
         if (classList === 'cell black green'){
-          alert('green won');
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          }, 3000);
           // page.classList.add('animated infinate bounce');
-          location.reload();
+
         } else {
-          alert('blue won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          },3000);
         }
         container.removeEventListener('click', pickBox);
       } 
@@ -68,11 +73,15 @@ function init() {
       if (squares.indexOf("1") !== -1 && squares.indexOf("4") !== -1 &&  squares.indexOf("7") !== -1){
         var classList = boxClick.getAttribute('class');
         if (classList === 'cell black green'){
-          alert('green won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          }, 3000);
         } else {
-          alert('blue won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          },3000);
         }
         container.removeEventListener('click', pickBox);
       } 
@@ -80,66 +89,90 @@ function init() {
       if (squares.indexOf("1") !== -1 && squares.indexOf("5") !== -1 &&  squares.indexOf("9") !== -1){
         var classList = boxClick.getAttribute('class');
         if (classList === 'cell black green'){
-          alert('green won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          }, 3000);
         } else {
-          alert('blue won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          },3000);
         }
         container.removeEventListener('click', pickBox);
       } 
       if (squares.indexOf("2") !== -1 && squares.indexOf("5") !== -1 &&  squares.indexOf("8") !== -1){
         var classList = boxClick.getAttribute('class');
         if (classList === 'cell black green'){
-          alert('green won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          }, 3000);
         } else {
-          alert('blue won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          },3000);
         }
         container.removeEventListener('click', pickBox);
       } 
       if (squares.indexOf("3") !== -1 && squares.indexOf("6") !== -1 &&  squares.indexOf("9") !== -1){
         var classList = boxClick.getAttribute('class');
         if (classList === 'cell black green'){
-          alert('green won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          }, 3000);
         } else {
-          alert('blue won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          },3000);
         }
         container.removeEventListener('click', pickBox);
       } 
       if (squares.indexOf("3") !== -1 && squares.indexOf("5") !== -1 &&  squares.indexOf("7") !== -1){
         var classList = boxClick.getAttribute('class');
         if (classList === 'cell black green'){
-          alert('green won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          }, 3000);
         } else {
-          alert('blue won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          },3000);
         }
         container.removeEventListener('click', pickBox);
       } 
       if (squares.indexOf("4") !== -1 && squares.indexOf("5") !== -1 &&  squares.indexOf("6") !== -1){
         var classList = boxClick.getAttribute('class');
         if (classList === 'cell black green'){
-          alert('green won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          }, 3000);
         } else {
-          alert('blue won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          },3000);
         }
         container.removeEventListener('click', pickBox);
       } 
       if (squares.indexOf("7") !== -1 && squares.indexOf("8") !== -1 &&  squares.indexOf("9") !== -1){
         var classList = boxClick.getAttribute('class');
         if (classList === 'cell black green'){
-          alert('green won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          }, 3000);
         } else {
-          alert('blue won');
-          location.reload();
+          document.getElementById('win').innerHTML = "Green Wins!";
+          setTimeout(function(){
+            location.reload();
+          },3000);
         }
         container.removeEventListener('click', pickBox);
       }
