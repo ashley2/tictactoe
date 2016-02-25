@@ -3,50 +3,151 @@
 document.addEventListener('DOMContentLoaded', init);
 
 function init() {
+  // var x = 0;
+
+  // document.getElementById("playGame").onclick = playGame;
 
 
-  // var playGameButton = document.getElementById('playGame');
-  // playGameButton.addEventListener('click', playGame);
+  // function playGame (event){
+  //   console.log('click');
+  //   var x = 1;
+  //   console.log(x);
 
-  // function playGame(event){
-
-  // }
-
-  var isGreenTurn = true;
-
-  var container = document.getElementById('container');
-  container.addEventListener('click', pickBox);
+    // if (x === 1) {
+    //   console.log(x)
 
 
-  function pickBox(event) {
+    // }
 
-    var boxClick = event.target;
-    console.log(event.target);
+    var blueSquares = [];
+    var greenSquares = [];
 
-    if (isGreenTurn){
-      boxClick.classList.add('green');
-
-      isGreenTurn = !isGreenTurn;
-    } else {
-      boxClick.classList.add('blue');
-      isGreenTurn = true;
-
-    }
-    var hasClass = boxClick.classList.contains('green') || boxClick.classList.contains('blue');
+    var isGreenTurn = true;
 
 
-    if(!hasClass) {
+
+    document.getElementById('container').onclick = pickBox
+    function pickBox(event) {
+
+      var boxClick = event.target;
+      var hasClass = boxClick.classList.contains('green') || boxClick.classList.contains('blue');
+      if(!hasClass) {
+       if (isGreenTurn){
+        boxClick.classList.add('green');
+        greenSquares.push(boxClick.getAttribute("id").replace("cell", ""));
+        testWin(greenSquares);
+        isGreenTurn = !isGreenTurn;
+        document.getElementById('turn').innerHTML = "Blue Turn!";
+      } else {
+        boxClick.classList.add('blue');
+        blueSquares.push(boxClick.getAttribute("id").replace("cell", ""));
+        testWin(blueSquares);
+        isGreenTurn = !isGreenTurn;
+        document.getElementById('turn').innerHTML = "Green Turn!";
+      }
       return;
     }
 
+    var page = document.getElementById('page');
+
+    function testWin(squares){
+
+      if (squares.indexOf("1") !== -1 && squares.indexOf("2") !== -1 &&  squares.indexOf("3") !== -1){
+        var classList = boxClick.getAttribute('class');
+        if (classList === 'cell black green'){
+          alert('green won');
+          // page.classList.add('animated infinate bounce');
+          location.reload();
+        } else {
+          alert('blue won');
+          location.reload();
+        }
+        container.removeEventListener('click', pickBox);
+      } 
+
+      if (squares.indexOf("1") !== -1 && squares.indexOf("4") !== -1 &&  squares.indexOf("7") !== -1){
+        var classList = boxClick.getAttribute('class');
+        if (classList === 'cell black green'){
+          alert('green won');
+          location.reload();
+        } else {
+          alert('blue won');
+          location.reload();
+        }
+        container.removeEventListener('click', pickBox);
+      } 
+
+      if (squares.indexOf("1") !== -1 && squares.indexOf("5") !== -1 &&  squares.indexOf("9") !== -1){
+        var classList = boxClick.getAttribute('class');
+        if (classList === 'cell black green'){
+          alert('green won');
+          location.reload();
+        } else {
+          alert('blue won');
+          location.reload();
+        }
+        container.removeEventListener('click', pickBox);
+      } 
+      if (squares.indexOf("2") !== -1 && squares.indexOf("5") !== -1 &&  squares.indexOf("8") !== -1){
+        var classList = boxClick.getAttribute('class');
+        if (classList === 'cell black green'){
+          alert('green won');
+          location.reload();
+        } else {
+          alert('blue won');
+          location.reload();
+        }
+        container.removeEventListener('click', pickBox);
+      } 
+      if (squares.indexOf("3") !== -1 && squares.indexOf("6") !== -1 &&  squares.indexOf("9") !== -1){
+        var classList = boxClick.getAttribute('class');
+        if (classList === 'cell black green'){
+          alert('green won');
+          location.reload();
+        } else {
+          alert('blue won');
+          location.reload();
+        }
+        container.removeEventListener('click', pickBox);
+      } 
+      if (squares.indexOf("3") !== -1 && squares.indexOf("5") !== -1 &&  squares.indexOf("7") !== -1){
+        var classList = boxClick.getAttribute('class');
+        if (classList === 'cell black green'){
+          alert('green won');
+          location.reload();
+        } else {
+          alert('blue won');
+          location.reload();
+        }
+        container.removeEventListener('click', pickBox);
+      } 
+      if (squares.indexOf("4") !== -1 && squares.indexOf("5") !== -1 &&  squares.indexOf("6") !== -1){
+        var classList = boxClick.getAttribute('class');
+        if (classList === 'cell black green'){
+          alert('green won');
+          location.reload();
+        } else {
+          alert('blue won');
+          location.reload();
+        }
+        container.removeEventListener('click', pickBox);
+      } 
+      if (squares.indexOf("7") !== -1 && squares.indexOf("8") !== -1 &&  squares.indexOf("9") !== -1){
+        var classList = boxClick.getAttribute('class');
+        if (classList === 'cell black green'){
+          alert('green won');
+          location.reload();
+        } else {
+          alert('blue won');
+          location.reload();
+        }
+        container.removeEventListener('click', pickBox);
+      }
+
+    }
   }
-
-
-
+// }
 }
-
-
-
 
 
 
